@@ -25,6 +25,22 @@ class CreateUsersTable extends Migration {
 			$table->timestamps();
 			
 		});
+
+		$user = new User;
+		$user->username = "admin";
+		$user->nombre = "Admin";
+		$user->apellido = "admin";
+		$user->email = "admin@sistema.com";
+		$user->password = "admin";
+		$user->save();
+
+		$user = new User;
+		$user->username = "usuario";
+		$user->nombre = "Usuario";
+		$user->apellido = "user";
+		$user->email = "usuario@sistema.com";
+		$user->password = "usuario";
+		$user->save();
 	}
 
 	/**

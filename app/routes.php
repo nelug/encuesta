@@ -21,9 +21,10 @@ Route::group(array('prefix' => 'user'), function()
 Route::group(array('prefix' => 'formulario'), function()
 {
     Route::get('create', 'FormularioController@create');
+    Route::post('guardar', 'FormularioController@guardar');
 });
 
 
 Route::get('test',  function(){
-
+//u889195858_nelug 	u889195858_nelug 	mysql.hostinger.es 	0.02
 });

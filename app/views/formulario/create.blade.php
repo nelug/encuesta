@@ -402,8 +402,11 @@
         <input type="text" name="name" v-model="formulario.p30" class="form-control">
     </div>
 </div>
+<br>
+<br>
 
-
-<pre>
-    @{{ formulario | json }}
-</pre>
+<div class="row">
+  <div class="col-md-12">
+      <button type="button" class="btn btn-primary btn-lg btn-block" v-on="click: guardarFormulario()">Guardar Formulario..</button>
+  </div>
+</div>

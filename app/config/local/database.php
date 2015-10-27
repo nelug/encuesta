@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'prueba',
-			'username'  => 'root',
-			'password'  => 'admin',
+			'host'      => 'mysql.hostinger.es',
+			'database'  => 'u889195858_nelug',
+			'username'  => 'u889195858_nelug',
+			'password'  => '20Elmundo.es',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_spanish_ci',
 			'prefix'    => '',

@@ -33,6 +33,23 @@ var app = new Vue({
                     app.$compile(app.$el);
                 });
             });
+        },
+
+        guardarFormulario: function() {
+            $.ajax({
+                url: "formulario/guardar",
+                type: "POST",
+                data: {respuestas: app.formulario},
+            }).done(function(data) {
+                
+                if (data == 'success') {
+                    alert('formulario ingresado con exito..!');
+                    window.location.reload();
+                    return 0;
+                }
+
+                alert(data);
+            });
         }
    }
 
