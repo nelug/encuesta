@@ -54,9 +54,9 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'mysql.hostinger.es',
-			'database'  => 'u889195858_nelug',
-			'username'  => 'u889195858_nelug',
+			'host'      => 'mysql.hostinger.mx',
+			'database'  => 'u860223096_bd',
+			'username'  => 'u860223096_bd',
 			'password'  => '20Elmundo.es',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_spanish_ci',

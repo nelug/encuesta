@@ -41,7 +41,7 @@ return array(
 	| All database work in Laravel is done through the PHP PDO facilities
 	| so make sure you have the driver for your particular database of
 	| choice installed on your machine before you begin development.
-	|
+	| 	 
 	*/
 
 	'connections' => array(
@@ -54,9 +54,9 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'mysql.hostinger.es',
-			'database'  => 'u889195858_nelug',
-			'username'  => 'u889195858_nelug',
+			'host'      => 'mysql.hostinger.mx',
+			'database'  => 'u860223096_bd',
+			'username'  => 'u860223096_bd',
 			'password'  => '20Elmundo.es',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_spanish_ci',

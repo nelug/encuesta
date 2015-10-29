@@ -7,9 +7,11 @@ class FormularioController extends \BaseController {
 		$respuesta = Input::get('respuestas');
 
 		$table = new Respuesta;
+		$table->user_id =  Auth::user()->id;
 		$table->sexo = $respuesta['sexo'];
 		$table->edad = $respuesta['edad'];
 		$table->p1 = $respuesta['p1'];
+		$table->p1A = $respuesta['p1A'];
 		$table->p2 = $respuesta['p2'];
 		$table->p3 = $respuesta['p3'];
 		$table->p4 = $respuesta['p4'];
@@ -24,9 +26,11 @@ class FormularioController extends \BaseController {
 		$table->p13 = $respuesta['p13'];
 		$table->p14 = $respuesta['p14'];
 		$table->p15 = $respuesta['p15'];
+		$table->p15A = $respuesta['p15A'];
 		$table->p16 = $respuesta['p16'];
 		$table->p17 = $respuesta['p17'];
 		$table->p18 = $respuesta['p18'];
+		$table->p18A = $respuesta['p18A'];
 		$table->p19 = $respuesta['p19'];
 		$table->p20 = $respuesta['p20'];
 		$table->p21 = $respuesta['p21'];
@@ -36,9 +40,6 @@ class FormularioController extends \BaseController {
 		$table->p25 = $respuesta['p25'];
 		$table->p26 = $respuesta['p26'];
 		$table->p27 = $respuesta['p27'];
-		$table->p28 = $respuesta['p28'];
-		$table->p29 = $respuesta['p29'];
-		$table->p30 = $respuesta['p30'];
 
 		if($table->save())
 			return 'success';
