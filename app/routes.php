@@ -26,5 +26,4 @@ Route::group(array('prefix' => 'formulario'), function()
 
 
 Route::get('test',  function(){
-//u889195858_nelug 	u889195858_nelug 	mysql.hostinger.es 	0.02
 });

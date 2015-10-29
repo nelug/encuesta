@@ -37,7 +37,7 @@ class CreateUsersTable extends Migration {
 		$user = new User;
 		$user->username = "usuario1";
 		$user->nombre = "Usuario";
-		$user->apellido = "user";
+		$user->apellido = "Sofia";
 		$user->email = "usuario@sistema.com";
 		$user->password = "sofia";
 		$user->save();

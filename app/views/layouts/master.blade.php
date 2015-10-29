@@ -26,7 +26,8 @@
                 </div>
                 <ul class="nav navbar-right top-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Leonel Madrid <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>
+                            {{Auth::user()->nombre.' '.Auth::user()->apellido }} <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="/logout"><i class="fa fa-fw fa-power-off"></i>Cerrar Session</a>
@@ -42,9 +43,11 @@
                         <li>
                             <a href="#" v-on="click:verFormulario()"><i class="fa fa-fw fa-cube"></i> Encuesta</a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Graficas</a>
-                        </li>
+                        @if(Auth::user()->id == 1)
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Graficas</a>
+                            </li>
+                        @endif
                     </ul>
                 </div>
             </nav>
