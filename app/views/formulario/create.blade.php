@@ -169,13 +169,13 @@
     <div class="col-md-12"> <h3>11. ¿Qué tipo de transporte utiliza para venir a Esquipulas? </h3> </div>
     <div class="col-md-12">
         <div class="radio">
-          <label><input v-on="click: formulario.11 = 'Carro propio o familiar'" name="11" type="radio">Carro propio o familiar</label>
+          <label><input v-on="click: formulario.p11 = 'Carro propio o familiar'" name="p11" type="radio">Carro propio o familiar</label>
         </div>
         <div class="radio">
-          <label><input v-on="click: formulario.11 = 'Contratan Bus'" name="11" type="radio">Contratan Bus</label>
+          <label><input v-on="click: formulario.p11 = 'Contratan Bus'" name="p11" type="radio">Contratan Bus</label>
         </div>
         <div class="radio">
-          <label><input v-on="click: formulario.11 = 'transporte público'" name="11" type="radio">transporte público</label>
+          <label><input v-on="click: formulario.p11 = 'transporte público'" name="p11" type="radio">transporte público</label>
         </div>
     </div>
 </div>
