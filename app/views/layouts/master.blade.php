@@ -30,7 +30,7 @@
                             {{Auth::user()->nombre.' '.Auth::user()->apellido }} <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="/logout"><i class="fa fa-fw fa-power-off"></i>Cerrar Session</a>
+                                <a href="http://encuestaesquipulas.hol.es/public/logout"><i class="fa fa-fw fa-power-off"></i>Cerrar Session</a>
                             </li>
                         </ul>
                     </li>
