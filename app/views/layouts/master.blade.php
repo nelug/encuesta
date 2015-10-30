@@ -45,7 +45,10 @@
                         </li>
                         @if(Auth::user()->id == 1)
                             <li>
-                                <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Graficas</a>
+                                <a href="#" v-on="click:verGraficaPorPregunta()"><i class="fa fa-fw fa-bar-chart-o" ></i> Graficas</a>
+                            </li>
+                            <li>
+                                <a href="#" v-on="click:verGraficaPorUsuario()"><i class="fa fa-fw fa-bar-chart-o" ></i> Encuestas por usuario</a>
                             </li>
                         @endif
                     </ul>
@@ -79,13 +82,20 @@
                 </div>
             </div>
         </div>
+
         <script src="js/jquery.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/vue.js"></script>
-        <script src="js/vue-next.js"></script>
         <script src="js/plugins/morris/raphael.min.js"></script>
         <script src="js/plugins/morris/morris.min.js"></script>
         <script src="js/plugins/morris/morris-data.js"></script>
+
+        <script src="js/plugins/hichart/exporting.js"></script>
+        <script src="js/plugins/hichart/highcharts.js"></script>
+        <script src="js/plugins/hichart/highcharts-3d.js"></script>
+
+        <script src="js/vue.js"></script>
+        <script src="js/vue-next.js"></script>
         <script src="js/v-funciones.js"></script>
     </body>
 </html>

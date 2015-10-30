@@ -24,6 +24,15 @@ Route::group(array('prefix' => 'formulario'), function()
     Route::post('guardar', 'FormularioController@guardar');
 });
 
+Route::group(array('prefix' => 'graficas'), function()
+{
+    Route::get('grafica', 'GraficaController@grafica');
+    Route::get('usuario', 'GraficaController@usuario');
+    Route::get('preguntas', 'GraficaController@preguntas');
+});
+
+
 
 Route::get('test',  function(){
+
 });

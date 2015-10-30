@@ -105,7 +105,6 @@ class CreateUsersTable extends Migration {
 			user: usuario6
 			clave: elisabeth
 			_________________
-
 		*/
 	}
 

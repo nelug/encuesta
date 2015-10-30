@@ -382,7 +382,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-12"> <h3>26. ¿Cómo le pareció la limpieza de la ciudad   </h3> </div>
+    <div class="col-md-12"> <h3>26. ¿Cómo le pareció la limpieza de la ciudad? </h3> </div>
     <div class="col-md-12">
         <div class="radio">
           <label><input v-on="click: formulario.p26 = 'Buena'" name="p26" type="radio">Buena</label>

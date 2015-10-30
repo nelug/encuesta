@@ -10,11 +10,12 @@ class FormularioController extends \BaseController {
 		$table->user_id =  Auth::user()->id;
 		$table->sexo = $respuesta['sexo'];
 		$table->edad = $respuesta['edad'];
-		$table->p1 = $respuesta['p1'];
-		$table->p1A = $respuesta['p1A'];
+		$table->p1 = strtoupper($respuesta['p1']);
+		$table->p1A = strtoupper($respuesta['p1A']);
 		$table->p2 = $respuesta['p2'];
 		$table->p3 = $respuesta['p3'];
 		$table->p4 = $respuesta['p4'];
+		$table->p4A= $respuesta['p4A'];
 		$table->p5 = $respuesta['p5'];
 		$table->p6 = $respuesta['p6'];
 		$table->p7 = $respuesta['p7'];
