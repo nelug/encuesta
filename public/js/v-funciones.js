@@ -8,7 +8,7 @@ var app = new Vue({
         formulario: {
             sexo:"",
             edad:" ",
-            p1:  "", p1A: "", p2:  "", p3:  "", p4:  "", p5:  "",
+            p1:  "", p1A: "", p2:  "", p3:  "", p4:  "", p4A:  "", p5:  "",
             p6:  "", p7:  "", p8:  "", p9:  "", p10: "", p11: "",
             p12: "", p13: "", p14: "", p15: "", p15A:"", p16: "",
             p17: "", p18: "", p18A:"", p19: "", p20: "", p21: "",
@@ -45,7 +45,8 @@ var app = new Vue({
         limpiarFormulario: function() {
             this.sexo ="";
             this.edad ="";
-            this.p1 =  ""; this.p1A = ""; this.p2 =  ""; this.p3 =  ""; this.p4 =  ""; this.p5 =  "";
+            this.p1 =  ""; this.p1A = ""; this.p2 =  ""; this.p3 =  ""; this.p4 =  "";
+            this.p4A =  ""; this.p5 =  "";
             this.p6 =  ""; this.p7 =  ""; this.p8 =  ""; this.p9 =  ""; this.p10 = ""; this.p11 = "";
             this.p12 = ""; this.p13 = ""; this.p14 = ""; this.p15 = ""; this.p15A =""; this.p16 = "";
             this.p17 = ""; this.p18 = ""; this.p18A =""; this.p19 = ""; this.p20 = ""; this.p21 = "";
