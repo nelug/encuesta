@@ -50,7 +50,7 @@ var app = new Vue({
             this.p12 = ""; this.p13 = ""; this.p14 = ""; this.p15 = ""; this.p15A =""; this.p16 = "";
             this.p17 = ""; this.p18 = ""; this.p18A =""; this.p19 = ""; this.p20 = ""; this.p21 = "";
             this.p22 = ""; this.p23 = ""; this.p24 = ""; this.p25 = ""; this.p26 = ""; this.p27 = "";
-
+            this.verFormulario();
             alert('Formulario limpiado con exito...!');
         },
 
