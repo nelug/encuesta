@@ -89,11 +89,7 @@
         <script src="js/plugins/morris/raphael.min.js"></script>
         <script src="js/plugins/morris/morris.min.js"></script>
         <script src="js/plugins/morris/morris-data.js"></script>
-
-        <script src="js/plugins/hichart/exporting.js"></script>
-        <script src="js/plugins/hichart/highcharts.js"></script>
-        <script src="js/plugins/hichart/highcharts-3d.js"></script>
-
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script src="js/vue.js"></script>
         <script src="js/vue-next.js"></script>
         <script src="js/v-funciones.js"></script>

@@ -192,7 +192,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" v-show="(formulario.p12 == 'No')">
     <div class="col-md-12"> <h3>13. ¿Quién se lo ofreció?</h3> </div>
     <div class="col-md-12">
         <input type="text" name="name" v-model="formulario.p13" class="form-control">
@@ -232,7 +232,7 @@
     </div>
 </div>
 
-<div class="row" v-show="(formulario.p14 != '1 dia')">
+<div class="row" v-show="(formulario.p15 == 'Malo')">
     <div class="col-md-12"> <h3>15A ¿Por qué?</h3> </div>
     <div class="col-md-12">
         <input type="text" name="name" v-model="formulario.p15A" class="form-control">
@@ -278,7 +278,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" v-show="(formulario.p18 == 'Mala')">
     <div class="col-md-12"> <h3>18A ¿Por qué?</h3> </div>
     <div class="col-md-12">
         <input type="text" name="name" v-model="formulario.p18A" class="form-control">
@@ -367,7 +367,7 @@
 </div>
 
 <div class="row" v-show="(formulario.p23 == 'Si')">
-    <div class="col-md-12"> <h3>25. ¿considera que el precio por el servicio que recibió fue lo justo?  </h3> </div>
+    <div class="col-md-12"> <h3>25. ¿considera que el precio por el servicio  fue?  </h3> </div>
     <div class="col-md-12">
         <div class="radio">
           <label><input v-on="click: formulario.p25 = 'Bajos'" name="p25" type="radio">Bajos</label>
@@ -406,7 +406,10 @@
 <br>
 
 <div class="row">
-  <div class="col-md-12">
+    <div class="col-md-6">
+        <button type="button" class="btn btn-primary btn-lg btn-block" v-on="click: limpiarFormulario()">Limpiar Formulario..</button>
+    </div>
+  <div class="col-md-6">
       <button type="button" class="btn btn-primary btn-lg btn-block" v-on="click: guardarFormulario()">Guardar Formulario..</button>
   </div>
 </div>

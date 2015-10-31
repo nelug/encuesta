@@ -42,6 +42,18 @@ var app = new Vue({
             });
         },
 
+        limpiarFormulario: function() {
+            this.sexo ="";
+            this.edad ="";
+            this.p1 =  ""; this.p1A = ""; this.p2 =  ""; this.p3 =  ""; this.p4 =  ""; this.p5 =  "";
+            this.p6 =  ""; this.p7 =  ""; this.p8 =  ""; this.p9 =  ""; this.p10 = ""; this.p11 = "";
+            this.p12 = ""; this.p13 = ""; this.p14 = ""; this.p15 = ""; this.p15A =""; this.p16 = "";
+            this.p17 = ""; this.p18 = ""; this.p18A =""; this.p19 = ""; this.p20 = ""; this.p21 = "";
+            this.p22 = ""; this.p23 = ""; this.p24 = ""; this.p25 = ""; this.p26 = ""; this.p27 = "";
+
+            alert('Formulario limpiado con exito...!');
+        },
+
         guardarFormulario: function() {
             $.ajax({
                 url: "formulario/guardar",
