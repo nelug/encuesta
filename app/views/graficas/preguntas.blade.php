@@ -11,7 +11,9 @@
             <tr v-repeat="dt: preguntasTable">
                 <td>@{{dt.no}}.</td>
                 <td>@{{dt.pregunta}}</td>
-                <td> <a href="#"> <i class="fa fa-search" v-on="click: verGraficaPregunta(dt.no, dt.pregunta, dt.info)"></i></a></td>
+                <td>
+                    {{-- <a href="#"> <i class="fa fa-search" v-on="click: verGraficaPregunta(dt.no, dt.pregunta, dt.info)"></i></a> --}}
+                </td>
             </tr>
         </tbody>
     </table>
