@@ -34,5 +34,6 @@ Route::group(array('prefix' => 'graficas'), function()
 
 
 Route::get('test',  function(){
-
+ $graph = new GraficaController;
+ return $graph->pregunta();
 });

@@ -80,11 +80,70 @@ class GraficaController extends \BaseController {
         return $data;
     }
 
+    public function consultas($columna)
+    {
+        $data = Respuesta::select(
+            DB::raw("{$columna} as nombre"),
+            DB::raw("count(*) as cantidad"))
+        ->groupBy("{$columna}")
+        ->get();
+
+        return $data;
+    }
+
     public function consultaInformativa($columna)
     {
         $data = Respuesta::select(
             DB::raw("{$columna} as respuesta"))
         ->get();
+
+        return $data;
+    }
+
+    public function pregunta()
+    {
+        $data = array();
+
+        $data['sexo']  = $this->consultas('sexo');
+        $data['edad']  = $this->consultas('edad');
+        $data['p1']    = $this->consultas('p1');
+        $data['p1A']   = $this->consultas('p1A');
+        $data['p2']    = $this->consultas('p2');
+        $data['p3']    = $this->consultas('p3');
+        $data['p4']    = $this->consultas('p4');
+        $data['p4A']   = $this->consultas('p4A');
+        $data['p4Ai']  = $this->consultaInformativa('p4A');
+        $data['p5']    = $this->consultas('p5');
+        $data['p5i']   = $this->consultaInformativa('p5');
+        $data['p6']    = $this->consultas('p6');
+        $data['p7']    = $this->consultas('p7');
+        $data['p8']    = $this->consultas('p8');
+        $data['p8i']   = $this->consultaInformativa('p8');
+        $data['p9']    = $this->consultas('p9');
+        $data['p10']   = $this->consultas('p10');
+        $data['p11']   = $this->consultas('p11');
+        $data['p12']   = $this->consultas('p12');
+        $data['p13']   = $this->consultas('p13');
+        $data['p13i']  = $this->consultaInformativa('p13');
+        $data['p14']   = $this->consultas('p14');
+        $data['p15']   = $this->consultas('p15');
+        $data['p15A']  = $this->consultas('p15A');
+        $data['p15Ai'] = $this->consultaInformativa('p15A');
+        $data['p16']   = $this->consultas('p16');
+        $data['p17']   = $this->consultas('p17');
+        $data['p18']   = $this->consultas('p18');
+        $data['p18A']  = $this->consultas('p18A');
+        $data['p18Ai'] = $this->consultaInformativa('p18A');
+        $data['p19']   = $this->consultas('p19');
+        $data['p20']   = $this->consultas('p20');
+        $data['p21']   = $this->consultas('p21');
+        $data['p22']   = $this->consultas('p22');
+        $data['p23']   = $this->consultas('p23');
+        $data['p24']   = $this->consultas('p24');
+        $data['p25']   = $this->consultas('p25');
+        $data['p26']   = $this->consultas('p26');
+        $data['p27']   = $this->consultas('p27');
+        $data['p27i']  = $this->consultaInformativa('p27');
 
         return $data;
     }
